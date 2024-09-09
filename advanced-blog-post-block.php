@@ -5,7 +5,7 @@
  * Requires at least: 6.2
  * Tested up to:      6.4.2
  * Requires PHP:      7.1
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            Best WP Developer
  * Author URI:        https://bestwpdeveloper.com/
  * Plugin URI:        https://wordpress.org/plugins/advanced-blog-post-block/
@@ -78,7 +78,7 @@ final class BWDABPB_ADVANCED_BLOG_POST_BLOCKS_CLASS {
      * Define Constants
      */
     public function define_constants(){
-        define('BWDABPB_ADVANCED_BLOG_POST_VERSION', '1.0.1');
+        define('BWDABPB_ADVANCED_BLOG_POST_VERSION', '1.0.2');
         define('BWDABPB_ADVANCED_BLOG_POST_FILE', __FILE__);
 		define('BWDABPB_ADVANCED_BLOG_POST_DIR', __DIR__);
         define('BWDABPB_ADVANCED_BLOG_POST_DIR_PATH', plugin_dir_path(__FILE__));
@@ -168,6 +168,19 @@ final class BWDABPB_ADVANCED_BLOG_POST_BLOCKS_CLASS {
      */
     public function includes(){
         require_once BWDABPB_ADVANCED_BLOG_POST_DIR_PATH . 'includes/blocks-loader.php';
+        $this->bwdabpb_appsero_init_tracker();
+    }
+
+    public function bwdabpb_appsero_init_tracker() {
+        require __DIR__ . '/vendor/autoload.php';
+        function loaded_appsero_files(){
+            if ( ! class_exists( 'Appsero\Client' ) ) {
+            require_once __DIR__ . '/appsero/src/Client.php';
+            }
+            
+            $client->insights()->init();
+        }
+        loaded_appsero_files();
     }
 }
 

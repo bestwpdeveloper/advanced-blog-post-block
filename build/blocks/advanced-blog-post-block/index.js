@@ -1141,7 +1141,7 @@ var pkg = {
 		"@emotion/babel-plugin": "^11.11.0",
 		"@emotion/cache": "^11.11.0",
 		"@emotion/serialize": "^1.1.2",
-		"@emotion/use-insertion-effect-with-fallbacks": "^1.0.1",
+		"@emotion/use-insertion-effect-with-fallbacks": "^1.0.2",
 		"@emotion/utils": "^1.2.1",
 		"@emotion/weak-memoize": "^0.3.1",
 		"hoist-non-react-statics": "^3.3.1"
@@ -18022,7 +18022,7 @@ function combine (array, callback) {
   \********************************************************/
 /***/ ((module) => {
 
-module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":2,"name":"bwdabpb/advanced-blog-post-block","version":"1.0.1","title":"Advanced Blog Post Block","category":"bwdabpb-advanced-post-blocks","description":"Craft an eye-catching and dynamic visualization to elevate the appeal of your blog","example":[{"attributes":{"style":"style-1"}}],"supports":{"customClassName":false},"textdomain":"advanced-blog-post-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = /*#__PURE__*/JSON.parse('{"apiVersion":2,"name":"bwdabpb/advanced-blog-post-block","version":"1.0.2","title":"Advanced Blog Post Block","category":"bwdabpb-advanced-post-blocks","description":"Craft an eye-catching and dynamic visualization to elevate the appeal of your blog","example":[{"attributes":{"style":"style-1"}}],"supports":{"customClassName":false},"textdomain":"advanced-blog-post-block","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 
