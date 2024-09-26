@@ -5,7 +5,7 @@
  * Requires at least: 6.2
  * Tested up to:      6.4.2
  * Requires PHP:      7.1
- * Version:           1.0.3
+ * Version:           1.0.4
  * Author:            Best WP Developer
  * Author URI:        https://bestwpdeveloper.com/
  * Plugin URI:        https://wordpress.org/plugins/advanced-blog-post-block/
@@ -168,6 +168,7 @@ final class BWDABPB_ADVANCED_BLOG_POST_BLOCKS_CLASS {
      */
     public function includes(){
         require_once BWDABPB_ADVANCED_BLOG_POST_DIR_PATH . 'includes/blocks-loader.php';
+		require_once( 'includes/admin-notice.php' );
         $this->bwdabpb_appsero_init_tracker();
     }
 
